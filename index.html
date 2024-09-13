@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>.
+    <div class="header">
+        <p>Need a secure password?<br> Use QPass to instantly generate a random, strong password 🔐🎉
+        </p>
+    </div>
+</header>
+<section class="mainSection">
+    <!-- Password Section -->
+    <section class="pwSection">
+        <div class="pwInputContainer">
+            <input type="text" placeholder="Type your password or generate">
+            <button class="copyButton">
+                <img src="assets/images/copy.png" alt="copy"> Copy
+            </button>
+            <div class="pwStrength">
+                <h1>weak</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Generate Button -->
+    <section class="buttonSection">
+        <button class="generateButton">Generate a random password</button>
+    </section>
+
+    <!-- Password Length -->
+    <section class="lengthSection">
+        <h1>Password Length</h1>
+        <div>
+            <h2>12</h2> <!-- Default length value -->
+        </div>
+        <input type="range" max="20" min="0" value="12">
+    </section>
+
+    <!-- Radio Buttons -->
+    <section class="radioSection">
+        <div>
+            <input type="radio" id="easySay" name="passwordType" value="easy to say" checked>
+            <label for="easySay">Easy to say</label>
+        </div>
+        <div>
+            <input type="radio" id="easyRead" name="passwordType" value="easy to read">
+            <label for="easyRead">Easy to read</label>
+        </div>
+        <div>
+            <input type="radio" id="all" name="passwordType" value="all">
+            <label for="all">All</label>
+        </div>
+    </section>
+
+    <!-- Checkboxes -->
+    <section class="checkboxSection">
+        <div>
+            <input type="checkbox" id="uppercase" value="A-Z">
+            <label for="uppercase">A-Z</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lowercase" value="a-z">
+            <label for="lowercase">a-z</label>
+        </div>
+        <div>
+            <input type="checkbox" id="numbers" value="0-9">
+            <label for="numbers">0-9</label>
+        </div>
+        <div>
+            <input type="checkbox" id="symbols" value="!@#$%^&*()">
+            <label for="symbols">!@#$%^&*()</label>
+        </div>
+    </section>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

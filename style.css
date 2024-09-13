@@ -1,0 +1,460 @@
+/* Global body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5; /* Light gray background for a professional look */
+    overflow-x: hidden;
+}
+
+/* Header styling */
+.header {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-weight: bold;
+    background: #ffffff; /* White background for a clean look */
+    font-size: 24px;
+    border: 1px solid #007bff; /* Blue border for a professional touch */
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main section styling */
+.mainSection {
+    height: 400px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff; /* White background for consistency */
+    border: 1px solid #007bff; /* Blue border for visual consistency */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Password section styling */
+.pwSection {
+    margin-bottom: 20px;
+}
+
+/* Password Input Container */
+.pwInputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Password Input */
+.pwInputContainer input {
+    flex: 1;
+    height: 60px;
+    border: 1px solid #ced4da; /* Light gray border */
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    background: #ffffff; /* White background for clarity */
+    color: #495057; /* Dark gray text for better readability */
+    margin-right: 10px;
+}
+
+/* Copy Button */
+.copyButton {
+    background: #28a745; /* Green for positive action */
+    border: none;
+    color: white;
+    height: 60px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.copyButton img {
+    width: 20px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.copyButton:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+/* Password Strength Indicator */
+.pwStrength {
+    background: #dc3545; /* Red for weak password */
+    width: 100%;
+    max-width: 110px;
+    height: 50px;
+    position: absolute;
+    right: 480px;
+    top: 230px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pwStrength h1 {
+    color: white;
+    font-size: 20px;
+}
+
+/* Generate Button styling */
+.generateButton {
+    background: #007bff; /* Blue for primary actions */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.generateButton:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Password Length section */
+.lengthSection > h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 370px;
+    left: 400px;
+}
+
+.lengthSection > div {
+    height: 60px;
+    width: 60px;
+    max-width: 60px;
+    background: #ffffff; /* White background */
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    border: 1px solid #ced4da; /* Light gray border */
+    box-shadow: 0 2px 4px #82d1e8;
+}
+
+.lengthSection > div > h2 {
+    font-size: 18px;
+    color: #495057; /* Dark gray text */
+
+}
+
+input[type="range"] {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    position: absolute;
+    top: 460px;
+    left: 490px;
+}
+
+/* Radio Buttons styling */
+.radioSection {
+    width: 100%;
+    max-width: 150px;
+    background: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #82d1e8;
+    margin: 20px auto;
+    position: absolute;
+    right: 420px;
+}
+
+.radioSection > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    accent-color: #007bff; /* Blue color for radio buttons */
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.radioSection label {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #495057; /* Dark gray text */
+}
+
+/* Checkboxes styling */
+.checkboxSection {
+    width: 680px;
+    max-width: 800px;
+    background: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #82d1e8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    margin: 20px auto;
+    position: absolute;
+    bottom: 105px;
+    left: 400px;
+}
+
+.checkboxSection > div {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    accent-color: #007bff; /* Blue color for checkboxes */
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.checkboxSection label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #495057; /* Dark gray text */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        width: 400px;
+        margin: 10px auto;
+    }
+
+    .mainSection {
+        width: 100%;
+        max-width: 400px;
+        height: 380px;
+    }
+
+    .pwInputContainer {
+        flex-direction: column;
+    }
+
+    .pwInputContainer input {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .copyButton {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .lengthSection > h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 415px;
+        left: 52px;
+    }
+
+    .pwStrength {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        right: 45px;
+        top: 235px;
+    }
+
+    .generateButton {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .lengthSection > div {
+        width: 100%;
+        height: 60px;
+        background: #ffffff; /* White background */
+        border-radius: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 470px;
+        left: 50px;
+        border: 1px solid #ced4da; /* Light gray border */
+        box-shadow: 0 2px 4px #82d1e8;
+    }
+
+    input[type="range"] {
+        width: 100%;
+        max-width: 150px;
+        margin: 10px 0;
+        position: absolute;
+        top: 485px;
+        left: 120px;
+    }
+
+    .radioSection {
+        width: 100%;
+        max-width: 150px;
+        background: #ffffff; /* White background */
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px #82d1e8;
+        margin: 20px auto;
+        position: absolute;
+        right: 50px;
+        bottom: 175px;
+
+    }
+
+    .checkboxSection {
+        max-width: 360px;
+        width: 100%;
+        background: #ffffff; /* White background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px #82d1e8;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px auto;
+        position: absolute;
+        bottom: 95px;
+        left: 50px;
+    }
+}
+@media (max-width: 415px) {
+    .header{
+        width: 300px;
+        margin: 10px auto;
+        font-size: 18px;
+        top: 10px;
+        left: 18px;
+        padding-left: -10px;
+        position: absolute;
+    }
+    .mainSection {
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+        position: absolute;
+        left: 18px;
+        padding-left: -10px;
+        top: 150px;
+    }
+
+    .pwInputContainer {
+        flex-direction: column;
+    }
+
+    .pwInputContainer input {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .copyButton {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .lengthSection > h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 185px;
+        left: 20px;
+    }
+
+    .pwStrength {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        right: 17px;
+        top: 10px;
+    }
+
+    .generateButton {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .lengthSection > div {
+        width: 100%;
+        max-width: 40px;
+        height: 40px;
+        background: #ffffff; /* White background */
+        border-radius: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 225px;
+        left: 70px;
+        border: 1px solid #ced4da; /* Light gray border */
+        box-shadow: 0 2px 4px #82d1e8;
+    }
+
+    input[type="range"] {
+        width: 100%;
+        max-width: 150px;
+        margin: 10px 0;
+        position: absolute;
+        top: 230px;
+        left: 120px;
+    }
+
+    .radioSection{
+        width: 100%;
+        max-width: 180px;
+        height: 70px;
+        background: #ffffff; /* White background */
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px #82d1e8;
+        margin: 20px auto;
+        position: absolute;
+        right: 70px;
+        bottom: 50px;
+    }
+    .checkboxSection{
+        max-width: 315px;
+        width: 100%;
+        height: 40px;
+        background: #ffffff; /* White background */
+        padding: 0;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px #82d1e8;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        justify-content: center;
+        margin: 20px auto;
+        position: absolute;
+        bottom: -10px;
+        left: 10px;
+    }
+}
