@@ -94,7 +94,7 @@ body {
     height: 50px;
     position: absolute;
     right: 480px;
-    top: 230px;
+    top: 260px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@ body {
     font-size: 22px;
     margin-bottom: 10px;
     position: absolute;
-    top: 370px;
+    top: 385px;
     left: 400px;
 }
 
