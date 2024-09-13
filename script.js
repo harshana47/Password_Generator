@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const passwordInput = document.querySelector('.pwSection > div > input');
     const strengthIndicator = document.querySelector('.pwStrength > h1');
-    const strengthDiv = document.querySelector('.pwStrength')
+    const strengthDiv = document.querySelector('.pwStrength');
     const copyButton = document.querySelector('.copyButton');
     const generateButton = document.querySelector('.generateButton');
     const lengthSlider = document.querySelector('input[type="range"]');
@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let passwordLength = parseInt(lengthSlider.value, 10);
     let passwordOptions = {
-        uppercase: false,
-        lowercase: false,
-        numbers: false,
-        symbols: false
+        uppercase: false,  // Default to include uppercase
+        lowercase: true,  // Default to include lowercase
+        numbers: false,    // Default to include numbers
+        symbols: true     // Default to include symbols
     };
 
     function generatePassword() {
@@ -67,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // onRangeChange function to handle slider changes
     function onRangeChange(rangeElement, callback) {
         let oldValue = rangeElement.value;
 
@@ -84,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Use onRangeChange to handle the range slider
     onRangeChange(lengthSlider, (e) => {
         passwordLength = parseInt(e.target.value, 10);
         lengthDisplay.textContent = passwordLength;
@@ -124,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updatePassword();
         });
     });
-// Live update
+
     passwordInput.addEventListener('input', () => {
         updateStrengthIndicator(passwordInput.value);
         lengthDisplay.textContent = passwordInput.value.length;
