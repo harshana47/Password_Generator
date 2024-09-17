@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
     overflow-x: hidden;
+    background-image: url(assets/images/dark-blue.png);
 }
 
 /* Header styling */
@@ -15,11 +15,11 @@ body {
     font-weight: bold;
     background: #ffffff;
     font-size: 24px;
-    border: 1px solid #007bff;
+    /*border: 1px solid #007bff;*/
     text-align: center;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px gray;
 }
 
 /* Main section styling */
@@ -27,12 +27,12 @@ body {
     height: 400px;
     width: 90%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 20px auto ;
     background: #ffffff; /* White background for consistency */
-    border: 1px solid #007bff; /* Blue border for visual consistency */
+    /*border: 1px solid ; !* Blue border for visual consistency *!*/
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px gray;
 }
 
 /* Password section styling */
@@ -58,6 +58,8 @@ body {
     background: #ffffff; /* White background for clarity */
     color: #495057; /* Dark gray text for better readability */
     margin-right: 10px;
+    box-shadow: 0 2px 2px #857f7f;
+
 }
 
 /* Copy Button */
@@ -74,6 +76,8 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    box-shadow: 0 3px 2px #857f7f;
+
 }
 
 .copyButton img {
@@ -134,7 +138,7 @@ body {
     font-size: 22px;
     margin-bottom: 10px;
     position: absolute;
-    top: 385px;
+    top: 395px;
     left: 400px;
 }
 
@@ -150,7 +154,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 450px;
+    top: 470px;
     left: 400px;
     border: 1px solid #ced4da; /* Light gray border */
     box-shadow: 0 2px 4px #82d1e8;
@@ -167,7 +171,7 @@ input[type="range"] {
     max-width: 300px;
     margin: 10px 0;
     position: absolute;
-    top: 460px;
+    top: 490px;
     left: 490px;
 }
 
@@ -216,7 +220,7 @@ input[type="radio"] {
     gap: 120px;
     margin: 20px auto;
     position: absolute;
-    bottom: 105px;
+    bottom: 70px;
     left: 400px;
 }
 

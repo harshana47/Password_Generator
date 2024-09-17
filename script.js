@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let passwordLength = parseInt(lengthSlider.value, 10);
     let passwordOptions = {
-        uppercase: false,  // Default to include uppercase
-        lowercase: true,  // Default to include lowercase
-        numbers: false,    // Default to include numbers
-        symbols: true     // Default to include symbols
+        uppercase: false,
+        lowercase: true,
+        numbers: false,
+        symbols: true
     };
 
     function generatePassword() {
